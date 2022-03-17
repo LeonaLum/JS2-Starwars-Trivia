@@ -1,0 +1,97 @@
+*{
+margin:0;
+padding:0px;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+outline: none;
+border: none;
+}
+.hide{
+  display: none;
+}
+
+@mixin flexBox($direction, $align, $content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $content;
+}
+
+.heading{
+  text-align: center;
+  background-color: black;
+  color:white;
+  padding: 40px;
+}
+
+.header{
+  @include flexBox(row, center, space-around);
+  flex-wrap: wrap;
+  padding:30px;
+  background-color: rgb(61, 129, 231);
+
+  .select{
+     padding: 20px;
+     background-color: black;
+     color: white;
+     &:hover{
+       cursor: pointer;
+     }
+  }
+}
+
+.buttonShowCharacters{
+  padding:20px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  &:hover{
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255, 217, 0);
+  }
+}
+
+.mainWindow{
+  @include flexBox(row, center, space-evenly);
+  flex-wrap: wrap;
+  padding:20px;
+  background-color: black;
+  min-height: 500px;
+  .char-Card{
+    @include flexBox(column, center, space-around);
+    padding: 30px;
+    width:500px;
+    background-color: rgb(61, 129, 231);
+  h2{
+    margin-bottom: 10px;
+  }
+
+  .picture-Div{
+    background-color: purple;
+    width: 100%;
+    height: 250px;
+  }
+  .message-Window{
+    margin-top:5px;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    padding:20px;
+  }
+  .card-Button{
+    margin-top:5px;
+    display: block;
+    width: 100%;
+    padding:20px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    &:hover{
+      cursor: pointer;
+      background-color: rgb(255, 217, 0);
+      color: black;
+    }
+  }
+ }
+}

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+.heading {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+  background-color: #3d81e7;
+}
+
+.header .select {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.header .select:hover {
+  cursor: pointer;
+}
+
+.buttonShowCharacters {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+
+.buttonShowCharacters:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #ffd900;
+}
+
+.mainWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  background-color: black;
+  min-height: 500px;
+}
+
+.mainWindow .char-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+  width: 500px;
+  background-color: #3d81e7;
+}
+
+.mainWindow .char-Card h2 {
+  margin-bottom: 10px;
+}
+
+.mainWindow .char-Card .picture-Div {
+  background-color: purple;
+  width: 100%;
+  height: 250px;
+}
+
+.mainWindow .char-Card .message-Window {
+  margin-top: 5px;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+}
+
+.mainWindow .char-Card .card-Button {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+
+.mainWindow .char-Card .card-Button:hover {
+  cursor: pointer;
+  background-color: #ffd900;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
